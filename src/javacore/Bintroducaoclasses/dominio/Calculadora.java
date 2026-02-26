@@ -16,8 +16,25 @@ public class Calculadora {
 
     public double divideDoisNumeros(double num, double num2){
         if (num2 ==0){
+            System.out.println("Não existe divisão por zero!");
             return 0;
         }
         return num/num2;
+    }
+
+    public void imprimeDivisaoDeDoisNumeros(double num, double num2){
+        if(num2 ==0){
+            System.out.println("Não existe divisão por zero!");
+            return;
+        }
+        System.out.println(num/num2);
+    }
+
+    public void alteraDoisNumeros(int numero1, int numero2){
+        numero1 = 99;
+        numero2 = 33;
+        System.out.println("Dentro do alteraDoisNumeros");
+        System.out.println("Número 1: "+ numero1);
+        System.out.println("Número 2: "+ numero2);
     }
 }
